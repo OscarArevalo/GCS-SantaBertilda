@@ -1,0 +1,164 @@
+<app-navbar-log></app-navbar-log>
+
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Clientes</h1>
+    <p class="lead">Agregar o buscar clientes</p>
+    <hr>
+
+
+    <form>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nombres">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Apellidos">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="DPI">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Telefono">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="example@gmai.com">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Fecha Nacimiento (MM/DD/AAA)">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-block">Agregar</button>
+        </div>
+        <div class="col">
+
+        </div>
+      </div>
+    </form>
+
+    <hr>
+
+  </div>
+</div>
+
+
+<div class="container">
+  <table id="example" class="table table-responsive display" cellspacing="0" width="100%">
+      <thead class="thead-inverse">
+          <tr>
+              <th>#</th>
+              <th>Nombre</th>
+              <th>DPI</th>
+              <th>email</th>
+              <th>Telefono</th>
+              <th>Fecha Nacimiento</th>
+          </tr>
+      </thead>
+      <tfoot>
+          <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>DPI</th>
+            <th>email</th>
+            <th>Telefono</th>
+            <th>Fecha Nacimiento</th>
+          </tr>
+      </tfoot>
+      <tbody>
+          <tr>
+            <td><a href="#" data-toggle="modal" data-target="#exampleModal">1</a></td>
+            <td>Diego Armando Fernandez Briones</td>
+            <td>2668 17963 0101</td>
+            <td>diego.fernandez.58@gmail.com</td>
+            <td>54874555</td>
+            <td>30/10/1989</td>
+          </tr>
+          <tr>
+            <td><a href="#" data-toggle="modal" data-target="#exampleModal">2</a></td>
+            <td>Maria Luisa Hernandez Mota</td>
+            <td>2668 58964 0101</td>
+            <td>mmota@gmail.com</td>
+            <td>458236</td>
+            <td>03/05/1965</td>
+          </tr>
+          <tr>
+            <td><a href="#" data-toggle="modal" data-target="#exampleModal">3</a></td>
+            <td>Oscar Fernando Arevalo</td>
+            <td>2668 68954 0101</td>
+            <td>parevalo@gmail.com</td>
+            <td>48659872</td>
+            <td>03/05/1965</td>
+          </tr>
+          <tr>
+            <td><a href="#" data-toggle="modal" data-target="#exampleModal">4</a></td>
+            <td>Jose Carlos Hernandez Cajas</td>
+            <td>36584 356489 0101</td>
+            <td>jcajas@gmail.com</td>
+            <td>69854</td>
+            <td>03/05/1990</td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+
+
+
+
+
+<!-- Modal 1 -->
+<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Cliente</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombres">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellidos">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="DPI">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Telefono">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="example@gmai.com">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Fecha Nacimiento (MM/DD/AAA)">
+            </div>
+          </div>
+          <br>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>

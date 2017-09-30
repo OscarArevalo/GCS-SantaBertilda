@@ -1,0 +1,162 @@
+<app-navbar-log></app-navbar-log>
+<h1 class="display-3 margen-arriba">Administración</h1>
+<hr>
+
+  <div class="container">
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-expanded="true">General</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#gine" role="tab" aria-controls="profile">Cliente</a>
+      </li>
+    </ul>
+
+    <div class="jumbotron">
+      <div class="tab-content" id="myTabContent">
+        <!--    Cartas de administracion  Inicio -->
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="card-columns">
+
+            <div class="card">
+             <img class="card-img-top img-admin" src="/assets/img/botiquin.png" alt="Card image cap">
+             <div class="card-body">
+               <h4 class="card-title">Inicio</h4>
+               <p class="card-text">Agrega imagenes en la portada de tu pagina web, titulos y leyendas.</p>
+             </div>
+             <div class="card-footer">
+
+                 <a class="btn btn-outline-primary" [routerLink]="['/adminInicio']"> ingresar </a>
+
+             </div>
+            </div>
+
+
+
+            <div class="card">
+             <img class="card-img-top img-admin" src="/assets/img/creatividad.png" alt="Card image cap">
+             <div class="card-body">
+               <h4 class="card-title">Nosotros</h4>
+               <p class="card-text">Configure historia, filosofia, mision y vision de la empresa. </p>
+             </div>
+             <div class="card-footer">
+
+                 <a class="btn btn-outline-primary"> ingresar </a>
+
+             </div>
+            </div>
+
+
+            <div class="card">
+             <img class="card-img-top img-admin" src="/assets/img/doctor.png" alt="Card image cap">
+             <div class="card-body">
+               <h4 class="card-title">Médico</h4>
+               <p class="card-text">Configure los medicos, nombres, direcciones, telefonos, emails, zonas en donde trabajan, agreguele una foto al emdico.</p>
+             </div>
+             <div class="card-footer">
+
+                 <a class="btn btn-outline-primary" [routerLink]="['/admMedicos']"> ingresar </a>
+
+             </div>
+            </div>
+
+
+
+            <div class="card">
+             <img class="card-img-top img-admin" src="/assets/img/libro.png" alt="Card image cap">
+             <div class="card-body">
+               <h4 class="card-title">Contactanos</h4>
+               <p class="card-text">Configure sus contactos, direciones, telefonos, redes sociles, horarios, sucursales.</p>
+             </div>
+             <div class="card-footer">
+
+                 <a class="btn btn-outline-primary"> ingresar </a>
+
+             </div>
+            </div>
+
+
+            <div class="card">
+             <img class="card-img-top img-admin" src="/assets/img/servicio-al-cliente.png" alt="Card image cap">
+             <div class="card-body">
+               <h4 class="card-title">Servicios</h4>
+               <p class="card-text">Configure sus contactos, direciones, telefonos, redes sociles, horarios, sucursales.</p>
+             </div>
+             <div class="card-footer">
+
+                 <a class="btn btn-outline-primary" [routerLink]="['/admServicios']"> ingresar </a>
+
+
+
+             </div>
+            </div>
+
+            <div class="card">
+             <img class="card-img-top img-admin" src="/assets/img/grupo.png" alt="Card image cap">
+             <div class="card-body">
+               <h4 class="card-title">Usuario</h4>
+               <p class="card-text">Crear, eliminar, actualizar y darle permisos a tus usuarios, de una manera facil.</p>
+             </div>
+             <div class="card-footer">
+
+                 <a class="btn btn-outline-primary" [routerLink]="['/admUsuario']" > ingresar </a>
+
+             </div>
+            </div>
+
+          </div>
+        </div>
+        <!--    Cartas de administracion  Fin -->
+
+
+        <!--    Cartas de Cliente  Inicio -->
+        <div class="tab-pane fade" id="gine" role="tabpanel" aria-labelledby="profile-tab">
+
+          <div class="row">
+
+            <div class="col-md-4">
+
+              <div class="card">
+                 <img class="card-img-top img-admin" src="/assets/img/usuario2.png" alt="Card image cap">
+                 <div class="card-body">
+                   <h4 class="card-title">Clientes</h4>
+                   <p class="card-text">Agrega a tus clientes nuevos, modifica sus datos personales y elimina algun cliente.</p>
+                 </div>
+                 <div class="card-footer">
+
+                     <a class="btn btn-outline-primary" [routerLink]="['/admCliente']"  > ingresar </a>
+                     <!-- onclick="window.location.reload(); -->
+
+                 </div>
+              </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+              <div class="card">
+                   <img class="card-img-top img-admin" src="/assets/img/resultados.png" alt="Card image cap">
+                   <div class="card-body">
+                     <h4 class="card-title">Examenes y Resultados</h4>
+                     <p class="card-text">Carga los resultados de los examenes realizados, estos seran los que el usuario consulte.</p>
+                   </div>
+                   <div class="card-footer">
+
+                       <a class="btn btn-outline-primary" [routerLink]="['/admExamRes']"> ingresar </a>
+
+                   </div>
+                </div>
+
+              </div>
+
+            </div>
+
+
+        </div>
+        <!--    Cartas de Cliente  Fin -->
+      </div>
+  </div>
+</div>
+
+<app-login></app-login>

@@ -1,0 +1,297 @@
+<app-navbar-log></app-navbar-log>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Medicos</h1>
+    <p class="lead">Administra los medicos, para tu directorio, recuerda de especificar su especialidad.</p>
+    <hr>
+
+
+    <form>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nombres">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Apellidos">
+        </div>
+        <div class="col">
+          <select  class="form-control" id="exampleFormControlSelect2">
+            <option>Especialidad</option>
+            <option>Medico General</option>
+            <option>Ginecologia</option>
+            <option>Pediatria</option>
+            <option>Dermatologo</option>
+          </select>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Otras Especialidades">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Telefono">
+        </div>
+        <div class="col">
+          <select  class="form-control" id="exampleFormControlSelect2">
+            <option>Zona</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+          </select>
+        </div>
+      </div>
+      <br>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Direccion">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Horarios">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Correo">
+          </div>
+        </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              Masculino
+            </label> &nbsp; &nbsp; &nbsp;
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              Femenino
+            </label>
+          </div>
+
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-block">Agregar</button>
+        </div>
+        <div class="col">
+
+        </div>
+      </div>
+    </form>
+
+    <hr>
+
+  </div>
+</div>
+
+
+
+
+<div class="container">
+  <table id="example" class="table table-responsive display" cellspacing="0" width="100%">
+      <thead class="thead-inverse">
+          <tr>
+              <th>#</th>
+              <th>Nombre</th>
+              <th>Especialidad</th>
+              <th>Telefono</th>
+              <th>Zona</th>
+              <th>Imagen</th>
+          </tr>
+      </thead>
+      <tfoot>
+          <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Especialidad</th>
+            <th>Telefono</th>
+            <th>Zona</th>
+            <th>Imagen</th>
+          </tr>
+      </tfoot>
+      <tbody>
+          <tr>
+            <td><a href="#" data-toggle="modal" data-target="#exampleModal">1</a></td>
+            <td>Leonel Linares</td>
+            <td>Dermatólogo</td>
+            <td>2437-8271</td>
+            <td>1</td>
+            <td><a href="#" data-toggle="modal" data-target="#imagen">Subir</a></td>
+          </tr>
+          <tr>
+            <td><a href="#" data-toggle="modal" data-target="#exampleModal">2</a></td>
+            <td>William Martinez</td>
+            <td>Médico General</td>
+            <td>24378271</td>
+            <td>1</td>
+            <td><a href="#" data-toggle="modal" data-target="#imagen">Cambiar</a></td>
+          </tr>
+          <tr>
+            <td><a href="#" data-toggle="modal" data-target="#exampleModal">3</a></td>
+            <td>Eduardo Hernandez Stein</td>
+            <td>Médico General</td>
+            <td>24340247 y 24395042</td>
+            <td>11</td>
+            <td><a href="#" data-toggle="modal" data-target="#imagen">Cambiar</a></td>
+          </tr>
+          <tr>
+            <td><a href="#" data-toggle="modal" data-target="#exampleModal">4</a></td>
+            <td>Aura Marina Sánchez de Rodríguez</td>
+            <td>Pediatria</td>
+            <td>5608-7719</td>
+            <td>7</td>
+            <td><a href="#" data-toggle="modal" data-target="#imagen">Cambiar</a></td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+
+
+<!-- Large modal -->
+<!-- Modal -->
+<div class="modal fade" id="imagen" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Imagen Medico</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-justify">
+            <img class="card-img-top img-doctor" src="../../assets/img/noimage.png" alt="Card image cap">
+            <button type="button" class="btn btn-outline-primary btn-block">
+              subir
+            </button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal 1 -->
+<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Medico</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombres">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellidos">
+            </div>
+            <div class="col">
+              <select  class="form-control" id="exampleFormControlSelect2">
+                <option>Especialidad</option>
+                <option>Medico General</option>
+                <option>Ginecologia</option>
+                <option>Pediatria</option>
+                <option>Dermatologo</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Otras Especialidades">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Telefono">
+            </div>
+            <div class="col">
+              <select  class="form-control" id="exampleFormControlSelect2">
+                <option>Zona</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+              </select>
+            </div>
+          </div>
+          <br>
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Direccion">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Horarios">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Correo">
+              </div>
+            </div>
+          <br>
+          <div class="row">
+            <div class="col">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  Masculino
+                </label> &nbsp; &nbsp; &nbsp;
+                <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  Femenino
+                </label>
+              </div>
+
+            </div>
+
+            <div class="col">
+
+            </div>
+          </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,294 @@
+<app-navbar-log></app-navbar-log>
+
+
+
+<div class="margen-arriba container">
+
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-expanded="true">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">Profile</a>
+    </li>
+  </ul>
+
+  <div class="jumbotron">
+    <div class="tab-content" id="myTabContent">
+
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="display-3">Servicios SB</h1>
+              <p class="lead">Administracion de servicios Santa Bertilda.</p>
+            </div>
+            <div class="col-md-6 text-right">
+              <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#imagen">
+                Portada
+              </button>
+            </div>
+          </div>
+
+          <hr>
+
+
+          <form>
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Nombre">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col">
+                <label for="exampleFormControlTextarea1">Descripción</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col">
+
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-primary btn-block">Agregar</button>
+              </div>
+              <div class="col">
+
+              </div>
+            </div>
+          </form>
+
+          <hr>
+
+        </div>
+        <br>
+        <!--   Tabla -->
+        <table id="example" class="table table-responsive display" cellspacing="0" width="100%">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                  <th>#</th>
+                  <th>Nombre</th>
+                  <th>Estado</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                  <td><a href="#" data-toggle="modal" data-target="#exampleModal">1</a></td>
+                  <td>Rayos X</td>
+                  <td><a href="#" data-toggle="modal" data-target="#exampleModal">Desactivar</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#" data-toggle="modal" data-target="#exampleModal">2</a></td>
+                  <td>Endoscopia</td>
+                  <td><a href="#" data-toggle="modal" data-target="#exampleModal">Desactivar</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#" data-toggle="modal" data-target="#exampleModal">3</a></td>
+                  <td>Colonoscopia</td>
+                  <td><a href="#" data-toggle="modal" data-target="#exampleModal">Desactivar</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#" data-toggle="modal" data-target="#exampleModal">4</a></td>
+                  <td>Rayos Y</td>
+                  <td><a href="#" data-toggle="modal" data-target="#exampleModal">Activar</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+      </div>
+
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-md-6">
+                <h1 class="display-3">Servicios Empresariales</h1>
+                <p class="lead">Administracion de servicios empresariales.</p>
+              </div>
+              <div class="col-md-6 text-right">
+                <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#imagen2">
+                  Portada
+                </button>
+              </div>
+            </div>
+
+            <hr>
+
+
+            <form>
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col">
+                  <label for="exampleFormControlTextarea1">Descripción</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col">
+
+                </div>
+                <div class="col">
+                  <button type="button" class="btn btn-primary btn-block">Agregar</button>
+                </div>
+                <div class="col">
+
+                </div>
+              </div>
+            </form>
+
+            <hr>
+
+          </div>
+        </div>
+
+        <br>
+        <!--   Tabla -->
+        <table id="example2" class="table table-responsive display" cellspacing="0" width="100%">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                  <th>#</th>
+                  <th>Nombre</th>
+                  <th>Estado</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                  <td><a href="#" data-toggle="modal" data-target="#exampleModal">1</a></td>
+                  <td>Rayos X</td>
+                  <td><a href="#" data-toggle="modal" data-target="#exampleModal">Desactivar</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#" data-toggle="modal" data-target="#exampleModal">2</a></td>
+                  <td>Endoscopia</td>
+                  <td><a href="#" data-toggle="modal" data-target="#exampleModal">Desactivar</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#" data-toggle="modal" data-target="#exampleModal">3</a></td>
+                  <td>Colonoscopia</td>
+                  <td><a href="#" data-toggle="modal" data-target="#exampleModal">Desactivar</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#" data-toggle="modal" data-target="#exampleModal">4</a></td>
+                  <td>Rayos Y</td>
+                  <td><a href="#" data-toggle="modal" data-target="#exampleModal">Activar</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Servicio</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col">
+              <label for="exampleFormControlTextarea1">Descripción</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+            </div>
+          </div>
+          <br>
+
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Portada -->
+<div class="modal bd-example-modal-lg fade" id="imagen" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Portada servicios</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-justify">
+            <img class="card-img-top img-doctor" src="../../assets/img/sercicio.jpg" alt="Card image cap">
+            <br><br>
+            <button type="button" class="btn btn-outline-primary btn-block">
+              subir
+            </button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal bd-example-modal-lg fade" id="imagen2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Portada servicios</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-justify">
+            <img class="card-img-top img-doctor" src="../../assets/img/servicios2.png" alt="Card image cap">
+            <br><br>
+            <button type="button" class="btn btn-outline-primary btn-block">
+              subir
+            </button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

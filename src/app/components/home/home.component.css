@@ -1,0 +1,17 @@
+.carousel-inner > .carousel-item > img {
+  width:640px;
+  height:560px;
+}
+
+.promo-size{
+  width: 300px;
+  height:  300px;
+}
+
+.size-letra{
+  font-size: 150%;
+}
+
+.marge-pro{
+  margin-top: 35px;
+}

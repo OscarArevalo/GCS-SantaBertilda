@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var jQuery:any;
+declare var $:any;
+
 @Component({
   selector: 'app-adm-contacto',
   templateUrl: './adm-contacto.component.html',
@@ -10,6 +13,7 @@ export class AdmContactoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+      $('#example').DataTable();    
   }
 
 }

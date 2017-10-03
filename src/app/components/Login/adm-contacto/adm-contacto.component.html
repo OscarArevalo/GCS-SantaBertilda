@@ -1,3 +1,153 @@
-<p>
-  adm-contacto works!
-</p>
+<app-navbar-log></app-navbar-log>
+
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Contactos</h1>
+    <p class="lead">Administracion de los contactos de la empresa.</p>
+    <hr>
+
+
+    <form>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nombres">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Apellidos">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Descripcion">
+        </div>
+        <div class="col">
+          <input type="number" class="form-control" placeholder="Teléfono">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <input type="email" class="form-control" placeholder="Correo">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-block">Agregar</button>
+        </div>
+        <div class="col">
+
+        </div>
+      </div>
+    </form>
+
+    <hr>
+
+  </div>
+</div>
+
+
+<div class="container">
+  <table id="example" class="table table-responsive display" cellspacing="0" width="100%">
+      <thead class="thead-inverse">
+          <tr>
+              <th>#</th>
+              <th>Nombre</th>
+              <th>Descripción</th>
+              <th>Correo</th>
+              <th>Teléfono</th>
+          </tr>
+      </thead>
+      <tfoot>
+        <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Correo</th>
+            <th>Teléfono</th>
+        </tr>
+      </tfoot>
+      <tbody>
+          <tr>
+            <td><a href="#" data-toggle="modal" data-target="#exampleModal">1</a></td>
+            <td>Diego Armando Fernandez Briones</td>
+            <td>Ingeniero</td>
+            <td>dfernandez@correo.com</td>
+            <td>12345678</td>
+          </tr>
+          <tr>
+            <td><a href="#" data-toggle="modal" data-target="#exampleModal">2</a></td>
+            <td>Maria Luisa Hernandez Mota</td>
+            <td>Doctora</td>
+            <td>mhernandez@correo.com</td>
+            <td>87654321</td>
+          </tr>
+          <tr>
+            <td><a href="#" data-toggle="modal" data-target="#exampleModal">3</a></td>
+            <td>Oscar Fernando Arevalo</td>
+            <td>Ingeniero</td>
+            <td>oarevalo@correo.com</td>
+            <td>11223344</td>
+          </tr>
+          <tr>
+            <td><a href="#" data-toggle="modal" data-target="#exampleModal">4</a></td>
+            <td>Jose Carlos Hernandez Cajas</td>
+            <td>Ingeniero</td>
+            <td>jhernandez@correo.com</td>
+            <td>44332211</td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Usuario</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombres">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellidos">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Usuario">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="DPI">
+            </div>
+          </div>
+          <br>
+
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>

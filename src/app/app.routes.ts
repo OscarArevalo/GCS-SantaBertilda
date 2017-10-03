@@ -9,12 +9,14 @@ import { ContactComponent } from './components/home/items/contact/contact.compon
 import { InicioComponent } from './components/Login/inicio/inicio.component';
 import { AdmClienteComponent } from './components/Login/adm-cliente/adm-cliente.component';
 import { AdminInicioComponent } from './components/Login/admin-inicio/admin-inicio.component';
+import { AdmContactoComponent } from './components/Login/adm-contacto/adm-contacto.component';
 import { AdmServiciosComponent } from './components/Login/adm-servicios/adm-servicios.component';
 import { AdmUsuarioComponent } from './components/Login/adm-usuario/adm-usuario.component';
 import { AdmExamResComponent } from './components/Login/adm-exam-res/adm-exam-res.component';
 import { AdmMedicosComponent } from './components/Login/adm-medicos/adm-medicos.component';
 import { ServiciosSbComponent } from './components/home/items/servicios-sb/servicios-sb.component';
 import { ServiciosEmpComponent } from './components/home/items/servicios-emp/servicios-emp.component';
+
 
 const APP_ROUTES: Routes = [
   { path: 'home', component: HomeComponent },
@@ -33,6 +35,7 @@ const APP_ROUTES: Routes = [
   { path: 'servicioSB', component: ServiciosSbComponent },
   { path: 'servicioEmp', component: ServiciosEmpComponent },
   { path: 'admServicios', component: AdmServiciosComponent },
+  { path: 'admContactos', component: AdmContactoComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 

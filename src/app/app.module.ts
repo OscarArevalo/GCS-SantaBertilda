@@ -36,7 +36,7 @@ import { BodegaIngresosComponent } from './components/Bodega/bodega-ingresos/bod
 import { BodegaProductosComponent } from './components/Bodega/bodega-productos/bodega-productos.component';
 import { BodegaReportesComponent } from './components/Bodega/bodega-reportes/bodega-reportes.component';
 import { BodegaSedesComponent } from './components/Bodega/bodega-sedes/bodega-sedes.component';
-import { ResultadosDeExamenesComponent } from './components/home/items/resultados-de-examenes/resultados-de-examenes.component';
+
 
 @NgModule({
   declarations: [
@@ -66,8 +66,7 @@ import { ResultadosDeExamenesComponent } from './components/home/items/resultado
     BodegaIngresosComponent,
     BodegaProductosComponent,
     BodegaReportesComponent,
-    BodegaSedesComponent,
-	ResultadosDeExamenesComponent
+    BodegaSedesComponent
   ],
   imports: [
     BrowserModule,

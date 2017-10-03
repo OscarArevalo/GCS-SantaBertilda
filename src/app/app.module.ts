@@ -30,6 +30,7 @@ import { AdmMedicosComponent } from './components/Login/adm-medicos/adm-medicos.
 import { ServiciosSbComponent } from './components/home/items/servicios-sb/servicios-sb.component';
 import { ServiciosEmpComponent } from './components/home/items/servicios-emp/servicios-emp.component';
 import { AdmServiciosComponent } from './components/Login/adm-servicios/adm-servicios.component';
+import { AdmContactoComponent } from './components/Login/adm-contacto/adm-contacto.component';
 
 
 @NgModule({
@@ -54,7 +55,8 @@ import { AdmServiciosComponent } from './components/Login/adm-servicios/adm-serv
     AdmMedicosComponent,
     ServiciosSbComponent,
     ServiciosEmpComponent,
-    AdmServiciosComponent
+    AdmServiciosComponent,
+    AdmContactoComponent
   ],
   imports: [
     BrowserModule,

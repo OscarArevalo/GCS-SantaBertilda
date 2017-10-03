@@ -15,6 +15,13 @@ body{
   cursor: pointer;
 }
 
+.img-admin{
+  width: 200px;
+  height: 200px;
+  margin-left: 70px;
+  margin-top: 20px;
+  margin-right: 70px;
+}
 
 
 

@@ -1,0 +1,88 @@
+<app-navbar></app-navbar>
+  <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-1">Resultados diponibles</h1>
+    <hr>
+<div class="container">
+    <tr>
+      <td>
+        <p class="lead">Codigo de validacion:</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="text" class="form-control" placeholder="Codigo de validacion">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <br/>
+        <button type="button" class="btn btn-primary btn-block">Validar codigo</button>
+      </td>
+    </tr>
+</div>
+    <hr>
+    <h3 class="display-3">Camilo Gandinni</h3>
+    <hr>
+    <div class="container">
+      <table id="example" class="table table-responsive display" cellspacing="0" width="100%">
+          <thead class="thead-inverse">
+              <tr>
+                  <th>Fecha</th>
+                  <th>Examen</th>
+                  <th>Estado</th>
+                  <th>Ver resultado</th>
+              </tr>
+          </thead>
+          <tfoot>
+              <tr>
+                <th>Fecha</th>
+                <th>Examen</th>
+                <th>Estado</th>
+                <th>Ver resultado</th>
+              </tr>
+          </tfoot>
+          <tbody>
+              <tr>
+                <td>10-01-2017</td>
+                <td>Prueba de paternidad</td>
+                <td>Pendiente</td>
+                <td><a href="#" data-toggle="modal" data-target="#Reporte">Ver resultado</a></td>
+              </tr>
+              <tr>
+                <td>02-02-2017</td>
+                <td>Rayos X</td>
+                <td>Terminado</td>
+                <td><a href="#" data-toggle="modal" data-target="#Reporte">Ver resultado</a></td>
+              </tr>
+              <tr>
+                <td>30-03-2017</td>
+                <td>Tomografía</td>
+                <td>Terminado</td>
+                <td><a href="#" data-toggle="modal" data-target="#Reporte">Ver resultado</a></td>
+              </tr>
+
+          </tbody>
+      </table>
+    </div>
+
+<div class="modal fade bd-example-modal-lg" id="Reporte" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Resultado.</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <img class="card-img-top img-doctor" src="../../assets/img/noimage.png" alt="Card image cap">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Descargar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<app-login></app-login>

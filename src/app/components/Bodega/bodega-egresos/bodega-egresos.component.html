@@ -1,0 +1,131 @@
+<app-navbar-log></app-navbar-log>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Egreso</h1>
+    <p class="lead">Despachar productos a alguna sede.</p>
+    <hr>
+    <form>
+      <div class="row">
+        <div class="col">
+          <p class="lead">Fecha de egreso</p>
+        </div>
+      <div class="col">
+        <input type="datetime-local" class="form-control" placeholder="Fecha">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p class="lead">Sede</p>
+      </div>
+    <div class="col">
+      <select  class="form-control" id="exampleFormControlSelect2">
+        <option>Sede Central</option>
+        <option>Sede norte</option>
+        <option>Sede sur</option>
+      </select>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col">
+      <p class="lead">Observacion</p>
+    </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Observacion">
+  </div>
+</div>
+</form>
+<hr>
+    <br/>
+<form>
+      <div class="row">
+        <div class="col">
+          <input type="number" class="form-control" placeholder="Codigo">
+        </div>
+        <div class="col">
+          <input type="number" class="form-control" placeholder="Cantidad">
+        </div>
+        </div>
+
+      <br/>
+      <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-block">Agregar</button>
+        </div>
+        <div class="col">
+        </div>
+      </div>
+  </form>
+  </div>
+</div>
+
+<div class="container">
+  <table id="example" class="table table-responsive display" cellspacing="0" width="100%">
+      <thead class="thead-inverse">
+          <tr>
+              <th>Codigo</th>
+              <th>Nombre</th>
+              <th>Cantidad</th>
+              <th>Eliminar</th>
+          </tr>
+      </thead>
+      <tfoot>
+          <tr>
+            <th>Codigo</th>
+            <th>Nombre</th>
+            <th>Cantidad</th>
+            <th>Eliminar</th>
+          </tr>
+      </tfoot>
+      <tbody>
+          <tr>
+            <td>101</td>
+            <td>Lapiz</td>
+            <td><input type="number"  value="10"></td>
+            <td><a href="#" data-toggle="modal" data-target="#Eliminar">Eliminar</a></td>
+          </tr>
+          <tr>
+            <td>202</td>
+            <td>Desinfectante</td>
+            <td><input type="number"  value="20"></td>
+            <td><a href="#" data-toggle="modal" data-target="#Eliminar">Eliminar</a></td>
+          </tr>
+          <tr>
+            <td>303</td>
+            <td>Trapeador</td>
+            <td><input type="number"  value="15"></td>
+            <td><a href="#" data-toggle="modal" data-target="#Eliminar">Eliminar</a></td>
+          </tr>
+
+      </tbody>
+  </table>
+  <br/>
+  <div class="col">
+    <button type="button" class="btn btn-primary btn-block">Guardar Egreso</button>
+  </div>
+</div>
+
+<app-login></app-login>
+<!-- Modal 1 -->
+<div class="modal fade bd-example-modal-lg" id="Eliminar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Eliminar detalle de egreso</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+          <p class="lead">¿Esta seguro que desea eliminar esta sede?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Si</button>
+      </div>
+    </div>
+  </div>
+</div>

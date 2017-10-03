@@ -1,0 +1,76 @@
+<app-navbar-log></app-navbar-log>
+<h1 class="display-3 margen-arriba">Control de Inventario</h1>
+<hr>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="tab-content" id="myTabContent">
+        <!--    Cartas de administracion  Inicio -->
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="card-columns">
+            <!-- Inicio -->
+            <div class="card">
+              <img class="card-img-top img-admin" src="/assets/img/Bodega/Mantenimiento.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Productos</h4>
+                  <p class="card-text">Crear, eliminar y actualizar productos.</p>
+                </div>
+                <div class="card-footer">
+                  <a class="btn btn-outline-primary" [routerLink]="['/bodegaProductos']"> ingresar </a>
+                </div>
+            </div>
+            <!-- Fin-->
+            <!-- Inicio -->
+            <div class="card">
+              <img class="card-img-top img-admin" src="/assets/img/Bodega/Ingreso.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Ingreso</h4>
+                <p class="card-text">Aumento la cantidad disponible de inventario.</p>
+              </div>
+              <div class="card-footer">
+                <a class="btn btn-outline-primary" [routerLink]="['/bodegaIngresos']"> ingresar </a>
+              </div>
+            </div>
+            <!-- Fin-->
+            <!-- Inicio -->
+            <div class="card">
+              <img class="card-img-top img-admin" src="/assets/img/Bodega/Sede.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Sedes</h4>
+                <p class="card-text">Crear, eliminar y actualizar las sedes disponibles.</p>
+              </div>
+              <div class="card-footer">
+                <a class="btn btn-outline-primary" [routerLink]="['/bodegaSedes']"> ingresar </a>
+              </div>
+              </div>
+              <!-- Fin-->
+              <!-- Inicio -->
+            <div class="card">
+              <img class="card-img-top img-admin" src="/assets/img/Bodega/Egreso.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Egresos</h4>
+                <p class="card-text">Despachar productos a alguna sede.</p>
+              </div>
+              <div class="card-footer">
+                <a class="btn btn-outline-primary" [routerLink]="['/bodegaEgresos']" > ingresar </a>
+              </div>
+            </div>
+            <!-- Fin-->
+            <!-- Inicio -->
+            <div class="card">
+              <img class="card-img-top img-admin" src="/assets/img/Bodega/Reporte.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Reporte</h4>
+                <p class="card-text">Genera la informacion util de los productos.</p>
+              </div>
+              <div class="card-footer">
+                <a class="btn btn-outline-primary" [routerLink]="['/bodegaReportes']"> ingresar </a>
+              </div>
+            </div>
+            <!-- Fin-->
+            </div>
+          </div>
+        <!--    Cartas de administracion  Fin -->
+        </div>
+      </div>
+  </div>
+  <app-login></app-login>

@@ -16,6 +16,14 @@ import { AdmExamResComponent } from './components/Login/adm-exam-res/adm-exam-re
 import { AdmMedicosComponent } from './components/Login/adm-medicos/adm-medicos.component';
 import { ServiciosSbComponent } from './components/home/items/servicios-sb/servicios-sb.component';
 import { ServiciosEmpComponent } from './components/home/items/servicios-emp/servicios-emp.component';
+import { BodegaHomeComponent } from './components/Bodega/bodega-home/bodega-home.component';
+import { BodegaIngresosComponent } from './components/Bodega/bodega-ingresos/bodega-ingresos.component';
+import { BodegaEgresosComponent } from './components/Bodega/bodega-egresos/bodega-egresos.component';
+import { BodegaProductosComponent } from './components/Bodega/bodega-productos/bodega-productos.component';
+import { BodegaSedesComponent } from './components/Bodega/bodega-sedes/bodega-sedes.component';
+import { BodegaReportesComponent } from './components/Bodega/bodega-reportes/bodega-reportes.component';
+import { ResultadosDeExamenesComponent } from './components/home/items/resultados-de-examenes/resultados-de-examenes.component';
+
 
 
 const APP_ROUTES: Routes = [

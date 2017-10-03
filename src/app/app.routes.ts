@@ -15,6 +15,13 @@ import { AdmExamResComponent } from './components/Login/adm-exam-res/adm-exam-re
 import { AdmMedicosComponent } from './components/Login/adm-medicos/adm-medicos.component';
 import { ServiciosSbComponent } from './components/home/items/servicios-sb/servicios-sb.component';
 import { ServiciosEmpComponent } from './components/home/items/servicios-emp/servicios-emp.component';
+import { BodegaHomeComponent } from './components/Bodega/bodega-home/bodega-home.component';
+import { BodegaIngresosComponent } from './components/Bodega/bodega-ingresos/bodega-ingresos.component';
+import { BodegaEgresosComponent } from './components/Bodega/bodega-egresos/bodega-egresos.component';
+import { BodegaProductosComponent } from './components/Bodega/bodega-productos/bodega-productos.component';
+import { BodegaSedesComponent } from './components/Bodega/bodega-sedes/bodega-sedes.component';
+import { BodegaReportesComponent } from './components/Bodega/bodega-reportes/bodega-reportes.component';
+
 
 const APP_ROUTES: Routes = [
   { path: 'home', component: HomeComponent },
@@ -33,6 +40,12 @@ const APP_ROUTES: Routes = [
   { path: 'servicioSB', component: ServiciosSbComponent },
   { path: 'servicioEmp', component: ServiciosEmpComponent },
   { path: 'admServicios', component: AdmServiciosComponent },
+  { path: 'bodegaHome', component: BodegaHomeComponent },
+ { path: 'bodegaIngresos', component: BodegaIngresosComponent },
+ { path: 'bodegaEgresos', component: BodegaEgresosComponent },
+ { path: 'bodegaProductos', component: BodegaProductosComponent },
+ { path: 'bodegaSedes', component: BodegaSedesComponent },
+ { path: 'bodegaReportes', component: BodegaReportesComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 

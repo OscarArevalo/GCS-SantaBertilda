@@ -1,0 +1,136 @@
+<app-navbar-log></app-navbar-log>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Productos</h1>
+    <p class="lead">Crear, eliminar y actualizar productos.</p>
+    <hr>
+    <form>
+      <div class="row">
+        <div class="col">
+          <input type="number" class="form-control" placeholder="Codigo">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nombres">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Descripcion">
+        </div>
+      </div>
+      <br/>
+      <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-block">Agregar</button>
+        </div>
+        <div class="col">
+        </div>
+      </div>
+  </form>
+  </div>
+</div>
+
+<div class="container">
+  <table id="example" class="table table-responsive display" cellspacing="0" width="100%">
+      <thead class="thead-inverse">
+          <tr>
+              <th>Codigo</th>
+              <th>Nombre</th>
+              <th>Descripcion</th>
+              <th>Editar</th>
+              <th>Eliminar</th>
+          </tr>
+      </thead>
+      <tfoot>
+          <tr>
+            <th>Codigo</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
+          </tr>
+      </tfoot>
+      <tbody>
+          <tr>
+            <td>101</td>
+            <td>Lapiz</td>
+            <td>Unida de lapiz mongol</td>
+            <td><a href="#" data-toggle="modal" data-target="#Modificar">Editar</a></td>
+            <td><a href="#" data-toggle="modal" data-target="#Eliminar">Eliminar</a></td>
+          </tr>
+          <tr>
+            <td>202</td>
+            <td>Desinfectante</td>
+            <td>Galon de desinfectante</td>
+            <td><a href="#" data-toggle="modal" data-target="#Modificar">Editar</a></td>
+            <td><a href="#" data-toggle="modal" data-target="#Eliminar">Eliminar</a></td>
+          </tr>
+          <tr>
+            <td>303</td>
+            <td>Trapeador</td>
+            <td>Trapeador tipo manta</td>
+            <td><a href="#" data-toggle="modal" data-target="#Modificar">Editar</a></td>
+            <td><a href="#" data-toggle="modal" data-target="#Eliminar">Eliminar</a></td>
+          </tr>
+
+      </tbody>
+  </table>
+</div>
+
+<app-login></app-login>
+<!-- Modal 1 -->
+<div class="modal fade bd-example-modal-lg" id="Modificar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modificar Producto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="row">
+            <div class="col">
+              <input type="number" class="form-control" placeholder="Codigo">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombres">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Direccion">
+            </div>
+          </div>
+      </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal fade bd-example-modal-lg" id="Eliminar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Eliminar Producto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+          <p class="lead">¿Esta seguro que desea eliminar esta sede?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Si</button>
+      </div>
+    </div>
+  </div>
+</div>

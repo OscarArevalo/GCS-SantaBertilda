@@ -38,6 +38,7 @@ import { BodegaProductosComponent } from './components/Bodega/bodega-productos/b
 import { BodegaReportesComponent } from './components/Bodega/bodega-reportes/bodega-reportes.component';
 import { BodegaSedesComponent } from './components/Bodega/bodega-sedes/bodega-sedes.component';
 import { ResultadosDeExamenesComponent } from './components/home/items/resultados-de-examenes/resultados-de-examenes.component';
+import { AdmNosotrosComponent } from './components/Login/adm-nosotros/adm-nosotros.component';
 
 
 @NgModule({
@@ -63,7 +64,8 @@ import { ResultadosDeExamenesComponent } from './components/home/items/resultado
     ServiciosSbComponent,
     ServiciosEmpComponent,
     AdmServiciosComponent,
-    AdmContactoComponent
+    AdmContactoComponent,
+    AdmNosotrosComponent
   ],
   imports: [
     BrowserModule,

@@ -21,7 +21,7 @@ import { BodegaEgresosComponent } from './components/Bodega/bodega-egresos/bodeg
 import { BodegaProductosComponent } from './components/Bodega/bodega-productos/bodega-productos.component';
 import { BodegaSedesComponent } from './components/Bodega/bodega-sedes/bodega-sedes.component';
 import { BodegaReportesComponent } from './components/Bodega/bodega-reportes/bodega-reportes.component';
-
+import { ResultadosDeExamenesComponent } from './components/home/items/resultados-de-examenes/resultados-de-examenes.component';
 
 const APP_ROUTES: Routes = [
   { path: 'home', component: HomeComponent },
@@ -46,6 +46,7 @@ const APP_ROUTES: Routes = [
  { path: 'bodegaProductos', component: BodegaProductosComponent },
  { path: 'bodegaSedes', component: BodegaSedesComponent },
  { path: 'bodegaReportes', component: BodegaReportesComponent },
+ { path: 'servicioRDE', component: ResultadosDeExamenesComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 

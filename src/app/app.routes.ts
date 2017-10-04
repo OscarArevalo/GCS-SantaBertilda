@@ -9,6 +9,7 @@ import { ContactComponent } from './components/home/items/contact/contact.compon
 import { InicioComponent } from './components/Login/inicio/inicio.component';
 import { AdmClienteComponent } from './components/Login/adm-cliente/adm-cliente.component';
 import { AdminInicioComponent } from './components/Login/admin-inicio/admin-inicio.component';
+import { AdmContactoComponent } from './components/Login/adm-contacto/adm-contacto.component';
 import { AdmServiciosComponent } from './components/Login/adm-servicios/adm-servicios.component';
 import { AdmUsuarioComponent } from './components/Login/adm-usuario/adm-usuario.component';
 import { AdmExamResComponent } from './components/Login/adm-exam-res/adm-exam-res.component';
@@ -21,6 +22,9 @@ import { BodegaEgresosComponent } from './components/Bodega/bodega-egresos/bodeg
 import { BodegaProductosComponent } from './components/Bodega/bodega-productos/bodega-productos.component';
 import { BodegaSedesComponent } from './components/Bodega/bodega-sedes/bodega-sedes.component';
 import { BodegaReportesComponent } from './components/Bodega/bodega-reportes/bodega-reportes.component';
+import { ResultadosDeExamenesComponent } from './components/home/items/resultados-de-examenes/resultados-de-examenes.component';
+import { AdmNosotrosComponent } from './components/Login/adm-nosotros/adm-nosotros.component';
+
 
 
 const APP_ROUTES: Routes = [
@@ -40,12 +44,15 @@ const APP_ROUTES: Routes = [
   { path: 'servicioSB', component: ServiciosSbComponent },
   { path: 'servicioEmp', component: ServiciosEmpComponent },
   { path: 'admServicios', component: AdmServiciosComponent },
+  { path: 'admContactos', component: AdmContactoComponent },
+  { path: 'admNosotros', component: AdmNosotrosComponent },
+  { path: 'resExamen', component: ResultadosDeExamenesComponent },
   { path: 'bodegaHome', component: BodegaHomeComponent },
- { path: 'bodegaIngresos', component: BodegaIngresosComponent },
- { path: 'bodegaEgresos', component: BodegaEgresosComponent },
- { path: 'bodegaProductos', component: BodegaProductosComponent },
- { path: 'bodegaSedes', component: BodegaSedesComponent },
- { path: 'bodegaReportes', component: BodegaReportesComponent },
+  { path: 'bodegaIngresos', component: BodegaIngresosComponent },
+  { path: 'bodegaEgresos', component: BodegaEgresosComponent },
+  { path: 'bodegaProductos', component: BodegaProductosComponent },
+  { path: 'bodegaSedes', component: BodegaSedesComponent },
+  { path: 'bodegaReportes', component: BodegaReportesComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 

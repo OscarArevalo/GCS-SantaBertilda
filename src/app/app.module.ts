@@ -30,12 +30,16 @@ import { AdmMedicosComponent } from './components/Login/adm-medicos/adm-medicos.
 import { ServiciosSbComponent } from './components/home/items/servicios-sb/servicios-sb.component';
 import { ServiciosEmpComponent } from './components/home/items/servicios-emp/servicios-emp.component';
 import { AdmServiciosComponent } from './components/Login/adm-servicios/adm-servicios.component';
+import { AdmContactoComponent } from './components/Login/adm-contacto/adm-contacto.component';
 import { BodegaEgresosComponent } from './components/Bodega/bodega-egresos/bodega-egresos.component';
 import { BodegaHomeComponent } from './components/Bodega/bodega-home/bodega-home.component';
 import { BodegaIngresosComponent } from './components/Bodega/bodega-ingresos/bodega-ingresos.component';
 import { BodegaProductosComponent } from './components/Bodega/bodega-productos/bodega-productos.component';
 import { BodegaReportesComponent } from './components/Bodega/bodega-reportes/bodega-reportes.component';
 import { BodegaSedesComponent } from './components/Bodega/bodega-sedes/bodega-sedes.component';
+import { ResultadosDeExamenesComponent } from './components/home/items/resultados-de-examenes/resultados-de-examenes.component';
+import { AdmNosotrosComponent } from './components/Login/adm-nosotros/adm-nosotros.component';
+
 
 
 @NgModule({
@@ -61,6 +65,9 @@ import { BodegaSedesComponent } from './components/Bodega/bodega-sedes/bodega-se
     ServiciosSbComponent,
     ServiciosEmpComponent,
     AdmServiciosComponent,
+    AdmContactoComponent,
+    AdmNosotrosComponent,
+    ResultadosDeExamenesComponent,
     BodegaEgresosComponent,
     BodegaHomeComponent,
     BodegaIngresosComponent,

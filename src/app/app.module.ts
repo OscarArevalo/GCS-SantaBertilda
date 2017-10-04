@@ -41,6 +41,7 @@ import { ResultadosDeExamenesComponent } from './components/home/items/resultado
 import { AdmNosotrosComponent } from './components/Login/adm-nosotros/adm-nosotros.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,7 +66,14 @@ import { AdmNosotrosComponent } from './components/Login/adm-nosotros/adm-nosotr
     ServiciosEmpComponent,
     AdmServiciosComponent,
     AdmContactoComponent,
-    AdmNosotrosComponent
+    AdmNosotrosComponent,
+    ResultadosDeExamenesComponent,
+    BodegaEgresosComponent,
+    BodegaHomeComponent,
+    BodegaIngresosComponent,
+    BodegaProductosComponent,
+    BodegaReportesComponent,
+    BodegaSedesComponent
   ],
   imports: [
     BrowserModule,

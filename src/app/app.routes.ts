@@ -46,6 +46,13 @@ const APP_ROUTES: Routes = [
   { path: 'admServicios', component: AdmServiciosComponent },
   { path: 'admContactos', component: AdmContactoComponent },
   { path: 'admNosotros', component: AdmNosotrosComponent },
+  { path: 'resExamen', component: ResultadosDeExamenesComponent },
+  { path: 'bodegaHome', component: BodegaHomeComponent },
+  { path: 'bodegaIngresos', component: BodegaIngresosComponent },
+  { path: 'bodegaEgresos', component: BodegaEgresosComponent },
+  { path: 'bodegaProductos', component: BodegaProductosComponent },
+  { path: 'bodegaSedes', component: BodegaSedesComponent },
+  { path: 'bodegaReportes', component: BodegaReportesComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 

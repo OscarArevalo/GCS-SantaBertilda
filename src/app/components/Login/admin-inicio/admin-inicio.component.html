@@ -6,19 +6,9 @@
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div *ngFor="let img of imgs; let i = index; trackBy:trackByIndex" class="carousel-item" [ngClass]="i == 0 ? 'item active' : 'item'">
       <div style="width:100%; margin-left:38%;">
-        <img src="../assets/img/car1.jpg" style="width:350px; height:350px;" (click)="adminImagen(0)" data-toggle="modal" data-target="#modalImagenes">
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div style="width:100%; margin-left:38%;">
-          <img src="../assets/img/car2.jpg" style="width:350px; height:350px;" (click)="adminImagen(1)" data-toggle="modal" data-target="#modalImagenes">
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div style="width:100%; margin-left:38%;">
-          <img src="../assets/img/car3.jpg" style="width:350px; height:350px;" (click)="adminImagen(2)" data-toggle="modal" data-target="#modalImagenes">
+        <img src="{{img.path}}" style="width:350px; height:350px;" (click)="adminImagen(i)" data-toggle="modal" data-target="#modalImagenes">
       </div>
     </div>
   </div>
@@ -122,9 +112,9 @@
       <div class="modal-footer">
         <div class="btn btn-primary" >
             Seleccionar
-            <input type="file" style="opacity: 0.0; position: absolute; top:0; left: 0; bottom: 0; right:0;" />
+            <input type="file" style="opacity: 0.0; position: absolute; top:0; left: 0; bottom: 0; right:0;" (change)="fileChangeEvent($event)" />
         </div>
-        <button type="button" class="btn btn-primary" >Guardar</button>
+        <button type="button" class="btn btn-primary" (click)="uploadImage()">Guardar</button>
         <button type="button" class="btn btn-secundary"  data-dismiss="modal">Cancelar</button>
       </div>
     </div>
@@ -132,7 +122,7 @@
 </div>
 
 <!-- Modal EditPromo-->
-<!--div class="modal fade" id="modalPromo" tabindex="-1" role="dialog" aria-labelledby="modalPromo" aria-hidden="true">
+<div class="modal fade" id="modalPromo" tabindex="-1" role="dialog" aria-labelledby="modalPromo" aria-hidden="true">
   <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -145,11 +135,11 @@
           <form>
             <div class="form-group">
               <label for="recipient-name" class="form-control-label">Nombre</label>
-              <input type="text" class="form-control" id="recipient-name"  [(ngModel)]="promo.nombre" >
+              <input type="text" class="form-control" id="recipient-name" name="promo.nombre"  [(ngModel)]="promo.nombre" >
             </div>
             <div class="form-group">
               <label for="recipient-name" class="form-control-label">descripción</label>
-              <input type="text" class="form-control" id="recipient-name" [(ngModel)]="promo.descripcion" >
+              <input type="text" class="form-control" id="recipient-name"  name="promo.descripcion" [(ngModel)]="promo.descripcion" >
             </div>
             <div class="form-group">
                 <img class="d-block w-100" src="{{promo.path}}" alt="Third slide" style="width:100px,height:100px">
@@ -162,6 +152,6 @@
         </div>
       </div>
     </div>
-  </div-->
+  </div>
 
 <app-login></app-login>

@@ -1,12 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 
 //Rutas
 import { APP_ROUTING } from './app.routes';
 
 //Servicios
+import { Globals } from './globals';
+import { ApiService } from './services/api.service';
 
 //Componentes
 import { AppComponent } from './app.component';
@@ -78,9 +81,10 @@ import { AdmNosotrosComponent } from './components/Login/adm-nosotros/adm-nosotr
   imports: [
     BrowserModule,
     APP_ROUTING,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [Globals, ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
